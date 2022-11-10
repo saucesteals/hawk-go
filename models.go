@@ -11,7 +11,7 @@ import (
 Cloudflare
 */
 type Scraper struct {
-	Client                         fhttp.Client
+	Client                         *fhttp.Client
 	CaptchaFunction                func(originalURL, siteKey string) (string, error)
 	FingerprintChallenge           bool
 	Script                         string
@@ -97,7 +97,7 @@ type apiResponse struct {
 type PX struct {
 	Domain         string
 	PXID           string
-	Client         http.Client
+	Client         *http.Client
 	Captcha        bool
 	Gcap           bool
 	CurrentPayload string

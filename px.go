@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-func PXInit(client http.Client, domain, key string) (PX, error) {
+func PXInit(client *http.Client, domain, key string) (PX, error) {
 	var pxID string
 	var ok bool
 	if pxID, ok = SITE_IDS[domain]; !ok {

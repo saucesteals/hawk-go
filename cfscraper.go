@@ -17,7 +17,7 @@ import (
 	http "github.com/saucesteals/fhttp"
 )
 
-func CFInit(client http.Client, key string, debug bool) (scraper Scraper) {
+func CFInit(client *http.Client, key string, debug bool) (scraper Scraper) {
 	// Config Vars
 	scraper.Script = "https://%v/cdn-cgi/challenge-platform/h/g/orchestrate/jsch/v1"
 	scraper.CaptchaScript = "https://%v/cdn-cgi/challenge-platform/h/g/orchestrate/captcha/v1"
