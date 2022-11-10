@@ -14,7 +14,7 @@ import (
 	"net/http"
 
 	"github.com/anaskhan96/soup"
-	fhttp "github.com/useflyent/fhttp"
+	fhttp "github.com/saucesteals/fhttp"
 )
 
 func ReadAndCopyBody(r interface{}) ([]byte, error) {

@@ -14,7 +14,7 @@ import (
 	"time"
 
 	lz "github.com/Lazarus/lz-string-go"
-	http "github.com/useflyent/fhttp"
+	http "github.com/saucesteals/fhttp"
 )
 
 func CFInit(client http.Client, key string, debug bool) (scraper Scraper) {

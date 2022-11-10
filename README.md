@@ -9,9 +9,9 @@ Installation:
 Example:
 ```go
 import (
-    "github.com/useflyent/fhttp/cookiejar"
+    "github.com/saucesteals/fhttp/cookiejar"
     hawk "github.com/juiced-aio/hawk-go"
-    http "github.com/useflyent/fhttp"
+    http "github.com/saucesteals/fhttp"
 )
 
 // Client has to be from fhttp and up to CloudFlare's standards, this can include ja3 fingerprint/http2 settings.
@@ -51,6 +51,6 @@ resp, err := scraper.Do(req)
 
 All of the logic is based off of HawkAPIs cloudscraper.
 
-Thanks to [zMrKrabz](https://github.com/zMrKrabz) for [fhttp](https://github.com/useflyent/fhttp)
+Thanks to [zMrKrabz](https://github.com/zMrKrabz) for [fhttp](https://github.com/saucesteals/fhttp)
 
 For most questions I'd make a ticket in HawkAPI's discord server but if needed my discord is `Humphreyyyy#0088`.

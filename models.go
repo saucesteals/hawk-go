@@ -4,13 +4,11 @@ import (
 	"net/http"
 	"time"
 
-	fhttp "github.com/useflyent/fhttp"
+	fhttp "github.com/saucesteals/fhttp"
 )
 
 /*
-
-	Cloudflare
-
+Cloudflare
 */
 type Scraper struct {
 	Client                         fhttp.Client
